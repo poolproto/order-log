@@ -1,0 +1,13 @@
+{
+  "name": "@noirprotocol/order-log",
+  "version": "0.1.0",
+  "description": "Public append-only log of every order the Noir engine processes. Verifiable and replayable.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "verify": "node dist/cli.js verify"
+  },
+  "license": "MIT"
+}
