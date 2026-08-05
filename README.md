@@ -1,6 +1,6 @@
 # order-log
 
-Public append-only log of every order the Noir matching engine processes — book fills and pool fills alike.
+Public append-only log of every order the Pool matching engine processes — book fills and pool fills alike.
 
 Every order the engine sees, in the exact sequence it saw them, is written here. The log captures both direct book matches and Uniswap v4 pool routing events, so you get full transparency on how each order was filled. You don't have to believe the matching was fair — you can replay it and prove it.
 
@@ -39,9 +39,9 @@ The `hash` of each entry is `sha256(entry without hash field)`. The `prevHash` c
 ## Verify
 
 ```typescript
-import { OrderLog, verifyLog } from '@noirprotocol/order-log';
+import { OrderLog, verifyLog } from '@poolprotocol/order-log';
 
-const log = new OrderLog('./noir.log');
+const log = new OrderLog('./pool.log');
 const entries = log.read();
 const result = verifyLog(entries);
 
