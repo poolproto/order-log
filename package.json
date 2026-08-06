@@ -1,7 +1,7 @@
 {
-  "name": "@noirprotocol/order-log",
+  "name": "@poolprotocol/order-log",
   "version": "0.1.0",
-  "description": "Public append-only log of every order the Noir engine processes. Verifiable and replayable.",
+  "description": "Public append-only log of every order the Pool engine processes. Verifiable and replayable.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
